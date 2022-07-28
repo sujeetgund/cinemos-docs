@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cinemos API</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <meta name="description" content="Cinemos API" />
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=K2D:300,400,500,700,800" rel="stylesheet">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <!--Header Section-->
+    <section class="bg-gradient pt-5 pb-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-row align-items-center justify-content-between">
+                    <div class="heading-brand">
+                        <img src="assets/logo.png" class="w-50" alt="Cinemos">
+                    </div>
+                    <a href="https://rapidapi.com/sujeetgund/api/cinemos" class="btn btn-dark" target="_blank">Read
+                        Docs</a>
+                </div>
+            </div>
+            <div class="row mt-6">
+                <div class="col-md-8 mx-auto text-center">
+                    <h1>Be Updated with every Cinematic News</h1>
+                    <p class="lead mb-5">Cinemos API is an easy solution for films, songs or webseries related news
+                        database. It includes Bollywood, South-Indian and International films related news, including
+                        some of those you watch frequently.
+                    </p>
+                    <a href="https://github.com/sujeetgund/cinemos" target="_blank" class="btn btn-success svg-icon">
+                        <em class="mr-2" data-feather="github"></em>
+                        Contribute
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-9 mx-auto">
+                    <div class="code-window">
+                        <div class="dots">
+                            <div class="red"></div>
+                            <div class="orange"></div>
+                            <div class="green"></div>
+                        </div>
+                        <pre class="language-javascript line-numbers"><code class="language-javascript">const axios = require("axios");
+
+const options = {
+  method: 'GET',
+  url: 'https://cinemos.p.rapidapi.com/news/bollywood',
+  headers: {
+    'X-RapidAPI-Key': 'YOUR_RAPIDAPI_KEY',
+    'X-RapidAPI-Host': 'cinemos.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});                     </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Features Section-->
+    <section class="py-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="text-center text-md-left">Reasons Why You Should Use <span
+                            class="text-success">Cinemos</span></h2>
+                    <div class="row feature-grid">
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner">
+                                        <span data-feather="check-circle" width="28" height="28"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    Dead Simple
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner">
+                                        <span data-feather="fast-forward" width="28" height="28"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    As Fast as CDN
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner">
+                                        <span data-feather="feather" width="28" height="28"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    Light as a Feather
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="media">
+                                <div class="icon-box">
+                                    <div class="icon-box-inner">
+                                        <span data-feather="activity" width="28" height="28"></span>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    Always Live
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Used By Section-->
+    <section class="pb-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="text-center text-md-left">Our Sponsers</h2>
+                    <p class="lead text-muted">This API is inspired from <a
+                            href="https://BollywoodHungama.com">BollywoodHungama.com</a> and deployed on <a
+                            href="https://rapidapi.com/">RapidAPI.com</a></p>
+                    <div class="mt-5 d-flex justify-content-md-center flex-wrap ">
+                        <img src="https://logo.clearbit.com/bollywoodhungama.com?size=70" alt="Bollywood Hungama" />
+                        <img src="https://logo.clearbit.com/rapidapi.com?size=70" alt="Rapid API" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://rapidapi.com/sujeetgund/api/cinemos"
+                                target="_blank">API
+                                Docs</a></li>
+                        <li class="list-inline-item"><a href="https://github.com/sujeetgund/cinemos"
+                                target="_blank">Give a star on
+                                Github</a></li>
+                        <li class="list-inline-item"><a href="https://github.com/sujeetgund/cinemos/fork"
+                                target="_blank">Fork on
+                                GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="col-md-4 mx-auto text-muted text-center small-xl">
+                    &copy; <span id="year"></span> Cinemos - All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
